@@ -7,7 +7,7 @@ public class Ave extends Animal {
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
-    private static int total;
+    private static int total= 1;
 	
 	public Ave() {
 		total++;
