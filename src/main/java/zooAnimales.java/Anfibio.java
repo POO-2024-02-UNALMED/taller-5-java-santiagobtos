@@ -22,14 +22,16 @@ public class Anfibio extends Animal{
 		
 		this.listado.add(this);
 	}
-	public static void crearRana(String name,int edad,String generito) {
+	public static Anfibio crearRana(String name,int edad,String generito) {
 		Anfibio nuevom = new Anfibio(name,edad,"selva",generito,"rojo",true);
 		ranas++;
+        return nuevom;
 		
 	}
-	public static void crearSalamandra(String name,int edad,String generito) {
+	public static Anfibio crearSalamandra(String name,int edad,String generito) {
 		Anfibio nuevom = new Anfibio(name,edad,"selva",generito,"negro y amarillp",false);
 		salamandras++;
+        return nuevom;
 	}
 	public static int cantidadAnfibios() {
 		int contador= salamandras+ranas;

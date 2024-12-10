@@ -23,20 +23,21 @@ public class Mamifero extends Animal {
 		
 		this.listado.add(this);
 	}
-	public static void crearCaballo(String name,int edad,String generito) {
+	public static Mamifero crearCaballo(String name,int edad,String generito) {
 		Mamifero nuevom = new Mamifero(name,edad,"pradera",generito,true,4);
 		caballos++;
+        return nuevom;
 		
 	}
-	public static void crearLeon(String name,int edad,String generito) {
+	public static Mamifero crearLeon(String name,int edad,String generito) {
 		Mamifero nuevom = new Mamifero(name,edad,"selva",generito,true,4);
 		leones++;
+        return nuevom;
 	}
 	public static int cantidadMamiferos() {
 		int contador= caballos+leones;
 		return contador;
 	}
-    // Para pelaje
     public boolean isPelaje() {
     return pelaje;
 }

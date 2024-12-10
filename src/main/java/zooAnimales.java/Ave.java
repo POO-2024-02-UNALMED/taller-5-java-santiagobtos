@@ -20,14 +20,16 @@ public class Ave extends Animal {
 		
 		this.listado.add(this);
 	}
-	public static void crearHalcon(String name,int edad,String generito) {
+	public static Ave crearHalcon(String name,int edad,String generito) {
 		Ave nuevom = new Ave(name,edad,"montañas",generito,"cafe glorioso");
 		halcones++;
+        return nuevom;
 		
 	}
-	public static void crearAguila(String name,int edad,String generito) {
+	public static Ave crearAguila(String name,int edad,String generito) {
 		Ave nuevom = new Ave(name,edad,"montañas",generito,"blanco y amarillo");
 		aguilas++;
+        return nuevom;
 	}
 	public static int cantidadAves() {
 		int contador= aguilas+halcones;

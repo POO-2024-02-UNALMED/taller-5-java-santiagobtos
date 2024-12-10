@@ -22,14 +22,15 @@ public class Reptil extends Animal {
 		
 		this.listado.add(this);
 	}
-	public static void crearSerpiente(String name,int edad,String generito) {
+	public static Reptil crearSerpiente(String name,int edad,String generito) {
 		Reptil nuevom = new Reptil(name,edad,"jungla",generito,"verde",1);
 		serpientes++;
-		
+		return nuevom;
 	}
-	public static void crearIguana(String name,int edad,String generito) {
+	public static Reptil crearIguana(String name,int edad,String generito) {
 		Reptil nuevom = new Reptil(name,edad,"humedal",generito,"verde",3);
 		iguanas++;
+        return nuevom;
 	}
 	public static int cantidadReptiles() {
 		int contador= iguanas+serpientes;

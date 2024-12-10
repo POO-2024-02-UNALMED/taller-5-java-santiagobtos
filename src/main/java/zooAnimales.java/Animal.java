@@ -71,7 +71,7 @@ public class Animal {
         this.zona = zona;
         
     }
-    public String totalPorTipo() {
+    public static String totalPorTipo() {
     	  return "Mamífero: " + Mamifero.cantidadMamiferos() + "\n" + 
     	           "Aves: " + Ave.cantidadAves() + "\n" +
     	           "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
