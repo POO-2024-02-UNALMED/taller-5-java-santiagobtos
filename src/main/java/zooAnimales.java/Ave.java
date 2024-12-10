@@ -7,7 +7,7 @@ public class Ave extends Animal {
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
-    private static int total= 1;
+    private static int total;
 	
 	public Ave() {
 		total++;
@@ -18,7 +18,7 @@ public class Ave extends Animal {
 		super(name,age,lugar,Genre);
 		
 		this.colorPlumas=leg;
-		
+		total++;
 		this.listado.add(this);
 	}
 	public static Ave crearHalcon(String name,int edad,String generito) {

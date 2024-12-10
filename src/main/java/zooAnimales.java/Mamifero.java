@@ -10,7 +10,7 @@ public class Mamifero extends Animal {
 	public static int leones;
 	private boolean pelaje;
 	private int patas;
-    private static int total=1;
+    private static int total;
 	
 	public Mamifero() {
 		total++;

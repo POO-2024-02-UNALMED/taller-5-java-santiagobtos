@@ -8,7 +8,7 @@ public class Pez extends Animal {
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
-    private static int total = 1;
+    private static int total ;
 	
 	public Pez() {
 		total++;
