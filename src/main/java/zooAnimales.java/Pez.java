@@ -28,9 +28,10 @@ public class Pez extends Animal {
         return nuevom;
 		
 	}
-	public static void crearSalmon(String name,int edad,String generito) {
+	public static Pez crearSalmon(String name,int edad,String generito) {
 		Pez nuevom = new Pez(name,edad,"oceano",generito,"rojo",6);
 		salmones++;
+        return nuevom;
 	}
 	public static int cantidadPeces() {
 		int contador= salmones+bacalaos;

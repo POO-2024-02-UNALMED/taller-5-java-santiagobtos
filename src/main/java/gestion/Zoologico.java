@@ -42,4 +42,7 @@ public class Zoologico {
 	public String getUbicacion() {
 		return this.ubicacion;
 	}
+    public Zona getZona(){
+        return this.zona
+    }
 }
