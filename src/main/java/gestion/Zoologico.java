@@ -43,6 +43,6 @@ public class Zoologico {
 		return this.ubicacion;
 	}
     public Zona getZona(){
-        return this.zona
+        return this.zona;
     }
 }
