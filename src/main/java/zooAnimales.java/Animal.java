@@ -79,21 +79,18 @@ public class Animal {
     	           "Anfibios: " + Anfibio.cantidadAnfibios();
     }
     public String toString() {
-    	if(zona[1]!= null) {
-    	 return "Mi nombre es %s, tengo una edad de %d, habito en %s y mi género es %s, la zona en la que me ubico es %s, en el %s."
-    	           .formatted(nombre, edad, habitat, genero, zona[1].getNombre(), zona[1].getZoo());
-    	}else { 
-    		 return "Mi nombre es %s, tengo una edad de %d, habito en %s y mi género es %s"
-      	           .formatted(nombre, edad, habitat, genero);
-    		
+    	if (zona[0] != null) {
+    	    return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + 
+    	           " y mi género es " + genero + ", la zona en la que me ubico es " + zona[0].getNombre() + 
+    	           ", en el " + zona[0].getZoo() ;
+    	} else {
+    	    return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + 
+    	           " y mi género es " + genero ;
     	}
-    	
-    }
+    	}
     
     public String movimiento() {
     	return "desplazarse";
     }
     
 }	
-	
-
