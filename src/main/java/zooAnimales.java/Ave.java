@@ -38,5 +38,12 @@ public class Ave extends Animal {
 		return "volar";
 		
 	}
+    public String getColorPlumas() {
+    return colorPlumas;
+}
+
+    public void setColorPlumas(String colorPlumas) {
+    this.colorPlumas = colorPlumas;
+}
 
 }
