@@ -42,7 +42,7 @@ public class Zoologico {
 	public String getUbicacion() {
 		return this.ubicacion;
 	}
-    public ArrayList getZona(){
+    public ArrayList<Zona> getZona(){
         return this.zona;
     }
 }
