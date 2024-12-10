@@ -8,7 +8,7 @@ public class Reptil extends Animal {
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
-    private int total;
+    private static int total;
 	
 	public Reptil() {
 		total++;
