@@ -72,7 +72,7 @@ public class Animal {
         
     }
     public static String totalPorTipo() {
-    	  return "Mamífero: " + Mamifero.cantidadMamiferos() + "\n" + 
+    	  return "Mamifero: " + Mamifero.cantidadMamiferos() + "\n" + 
     	           "Aves: " + Ave.cantidadAves() + "\n" +
     	           "Reptiles: " + Reptil.cantidadReptiles() + "\n" +
     	           "Peces: " + Pez.cantidadPeces() + "\n" +
@@ -81,11 +81,11 @@ public class Animal {
     public String toString() {
     	if (zona[0] != null) {
     	    return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + 
-    	           " y mi género es " + genero + ", la zona en la que me ubico es " + zona[0].getNombre() + 
+    	           " y mi genero es " + genero + ", la zona en la que me ubico es " + zona[0].getNombre() + 
     	           ", en el " + zona[0].getZoo() ;
     	} else {
     	    return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + 
-    	           " y mi género es " + genero ;
+    	           " y mi genero es " + genero ;
     	}
     	}
     

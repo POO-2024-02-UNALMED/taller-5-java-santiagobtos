@@ -21,13 +21,13 @@ public class Ave extends Animal {
 		this.listado.add(this);
 	}
 	public static Ave crearHalcon(String name,int edad,String generito) {
-		Ave nuevom = new Ave(name,edad,"montañas",generito,"cafe glorioso");
+		Ave nuevom = new Ave(name,edad,"montanas",generito,"cafe glorioso");
 		halcones++;
         return nuevom;
 		
 	}
 	public static Ave crearAguila(String name,int edad,String generito) {
-		Ave nuevom = new Ave(name,edad,"montañas",generito,"blanco y amarillo");
+		Ave nuevom = new Ave(name,edad,"montanas",generito,"blanco y amarillo");
 		aguilas++;
         return nuevom;
 	}
