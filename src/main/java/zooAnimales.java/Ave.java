@@ -7,9 +7,10 @@ public class Ave extends Animal {
 	public static int halcones;
 	public static int aguilas;
 	private String colorPlumas;
+    private int total;
 	
 	public Ave() {
-		
+		total++;
 		this.listado.add(this);
 		
 	}
@@ -32,7 +33,7 @@ public class Ave extends Animal {
         return nuevom;
 	}
 	public static int cantidadAves() {
-		int contador= aguilas+halcones;
+		int contador= aguilas+halcones+total;
 		return contador;
 	}
 	@Override

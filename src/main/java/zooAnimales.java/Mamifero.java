@@ -10,9 +10,10 @@ public class Mamifero extends Animal {
 	public static int leones;
 	private boolean pelaje;
 	private int patas;
+    private int total;
 	
 	public Mamifero() {
-		
+		total++;
 		this.listado.add(this);
 		
 	}
@@ -35,7 +36,7 @@ public class Mamifero extends Animal {
         return nuevom;
 	}
 	public static int cantidadMamiferos() {
-		int contador= caballos+leones;
+		int contador= caballos+leones+total;
 		return contador;
 	}
     public boolean isPelaje() {

@@ -8,9 +8,10 @@ public class Anfibio extends Animal{
 	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
+    private int total;
 	
 	public Anfibio() {
-		
+		total++;
 		this.listado.add(this);
 		
 	}
@@ -34,7 +35,7 @@ public class Anfibio extends Animal{
         return nuevom;
 	}
 	public static int cantidadAnfibios() {
-		int contador= salamandras+ranas;
+		int contador= salamandras+ranas+total;
 		return  contador;
 	}
 	@Override

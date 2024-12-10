@@ -8,9 +8,10 @@ public class Reptil extends Animal {
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
+    private int total;
 	
 	public Reptil() {
-		
+		total++;
 		this.listado.add(this);
 		
 	}
@@ -33,7 +34,7 @@ public class Reptil extends Animal {
         return nuevom;
 	}
 	public static int cantidadReptiles() {
-		int contador= iguanas+serpientes;
+		int contador= iguanas+serpientes+total;
 		return  contador;
 	}
 	@Override

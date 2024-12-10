@@ -8,9 +8,10 @@ public class Pez extends Animal {
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
+    private int total;
 	
 	public Pez() {
-		
+		total++;
 		this.listado.add(this);
 		
 	}
@@ -34,7 +35,7 @@ public class Pez extends Animal {
         return nuevom;
 	}
 	public static int cantidadPeces() {
-		int contador= salmones+bacalaos;
+		int contador= salmones+bacalaos+total;
 		return  contador;
 	}
 	@Override
